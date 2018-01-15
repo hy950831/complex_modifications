@@ -8,6 +8,6 @@ ln -s $PWD/Esc.json ~/.config/karabiner/assets/complex_modifications/1.json
 rm ~/.config/karabiner/assets/complex_modifications/2.json
 ln -s $PWD/Arrows.json ~/.config/karabiner/assets/complex_modifications/2.json
 
-# Launches apps
+# Launch new apps windows via keybindings
 rm ~/.config/karabiner/assets/complex_modifications/3.json
 ln -s $PWD/Launch.json ~/.config/karabiner/assets/complex_modifications/3.json

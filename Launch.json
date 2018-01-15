@@ -1,8 +1,8 @@
 {
-  "title": "Launch apps via keybindings",
+  "title": "Launch new apps windows via keybindings",
   "rules": [
     {
-      "description": "left control + left shift + ` (backtick) - launches iTerm2",
+      "description": "left control + left shift + ` (backtick) - launches a new iTerm2 window with the default profile",
       "manipulators": [
         {
           "from": {
@@ -16,7 +16,7 @@
           },
           "to": [
             {
-              "shell_command": "osascript -e 'tell app \"iTerm\"' -e 'if (count windows) is 0 then create window with default profile' -e activate -e end"
+              "shell_command": "osascript -e 'tell app \"iTerm\"' -e 'if (app \"iTerm\" is running) then create window with default profile' -e activate -e end"
             }
           ],
           "type": "basic"
@@ -24,7 +24,7 @@
       ]
     },
     {
-      "description": "left control + left shift + 1 - launches Safari",
+      "description": "left control + left shift + 1 - launches a new Safari window",
       "manipulators": [
         {
           "from": {
@@ -38,7 +38,7 @@
           },
           "to": [
             {
-              "shell_command": "osascript -e 'tell app \"Safari\"' -e 'if (count windows) is 0 then make new document' -e activate -e end"
+              "shell_command": "osascript -e 'tell app \"Safari\"' -e 'if (app \"Safari\" is running) then make new document' -e activate -e end"
             }
           ],
           "type": "basic"
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "description": "left control + left shift + 2 - launches Google Chrome",
+      "description": "left control + left shift + 2 - launches a new Google Chrome window",
       "manipulators": [
         {
           "from": {
@@ -60,7 +60,7 @@
           },
           "to": [
             {
-              "shell_command": "osascript -e 'tell app \"Google Chrome\"' -e 'if (count windows) is 0 then make new window' -e activate -e end"
+              "shell_command": "osascript -e 'tell app \"Google Chrome\"' -e 'if (app \"Google Chrome\" is running) then make new window' -e activate -e end"
             }
           ],
           "type": "basic"
