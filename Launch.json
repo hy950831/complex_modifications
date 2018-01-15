@@ -1,8 +1,8 @@
 {
-  "title": "Launch new apps window via keybindings",
+  "title": "Launch apps via keybindings",
   "rules": [
     {
-      "description": "left control + left shift + ` (backtick) - launches a new iTerm2 window with the default profile",
+      "description": "left control + left shift + ` (backtick) - launches iTerm2",
       "manipulators": [
         {
           "from": {
@@ -16,7 +16,7 @@
           },
           "to": [
             {
-              "shell_command": "osascript -e 'tell app \"iTerm\"' -e 'create window with default profile' -e activate -e end"
+              "shell_command": "osascript -e 'tell app \"iTerm\"' -e 'if (count windows) is 0 then create window with default profile' -e activate -e end"
             }
           ],
           "type": "basic"
@@ -24,7 +24,7 @@
       ]
     },
     {
-      "description": "left control + left shift + 1 - launches a new Safari window",
+      "description": "left control + left shift + 1 - launches Safari",
       "manipulators": [
         {
           "from": {
@@ -38,7 +38,7 @@
           },
           "to": [
             {
-              "shell_command": "osascript -e 'tell app \"Safari\"' -e 'make new document' -e activate -e end"
+              "shell_command": "osascript -e 'tell app \"Safari\"' -e 'if (count windows) is 0 then make new document' -e activate -e end"
             }
           ],
           "type": "basic"
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "description": "left control + left shift + 2 - launches a new Google Chrome window",
+      "description": "left control + left shift + 2 - launches Google Chrome",
       "manipulators": [
         {
           "from": {
@@ -60,7 +60,7 @@
           },
           "to": [
             {
-              "shell_command": "osascript -e 'tell app \"Google Chrome\"' -e 'make new window' -e activate -e end"
+              "shell_command": "osascript -e 'tell app \"Google Chrome\"' -e 'if (count windows) is 0 then make new window' -e activate -e end"
             }
           ],
           "type": "basic"
