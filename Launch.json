@@ -24,7 +24,7 @@
       ]
     },
     {
-      "description": "left control + left shift + 1 - launches a new Safari window",
+      "description": "left control + left shift + 1 - launches a new Google Chrome window",
       "manipulators": [
         {
           "from": {
@@ -38,7 +38,7 @@
           },
           "to": [
             {
-              "shell_command": "osascript -e 'tell app \"Safari\"' -e 'if (app \"Safari\" is running) then make new document' -e activate -e end"
+              "shell_command": "osascript -e 'tell app \"Google Chrome\"' -e 'if (app \"Google Chrome\" is running) then make new window' -e activate -e end"
             }
           ],
           "type": "basic"
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "description": "left control + left shift + 2 - launches a new Google Chrome window",
+      "description": "left control + left shift + 2 - launches a new Safari window",
       "manipulators": [
         {
           "from": {
@@ -60,7 +60,7 @@
           },
           "to": [
             {
-              "shell_command": "osascript -e 'tell app \"Google Chrome\"' -e 'if (app \"Google Chrome\" is running) then make new window' -e activate -e end"
+              "shell_command": "osascript -e 'tell app \"Safari\"' -e 'if (app \"Safari\" is running) then make new document' -e activate -e end"
             }
           ],
           "type": "basic"
