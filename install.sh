@@ -11,3 +11,7 @@ ln -s $PWD/Arrows.json ~/.config/karabiner/assets/complex_modifications/2.json
 # Launch new apps windows via keybindings
 rm ~/.config/karabiner/assets/complex_modifications/3.json
 ln -s $PWD/Launch.json ~/.config/karabiner/assets/complex_modifications/3.json
+
+# Launch new apps tabs via keybindings
+rm ~/.config/karabiner/assets/complex_modifications/4.json
+ln -s $PWD/NewTab.json ~/.config/karabiner/assets/complex_modifications/4.json
