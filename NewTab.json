@@ -2,7 +2,7 @@
   "title": "Launch new apps tabs via keybindings",
   "rules": [
     {
-      "description": "left control + ` (backtick) - launches a new iTerm2 window with the default profile",
+      "description": "left control + ` (backtick) - launches a new iTerm2 tab with the default profile",
       "manipulators": [
         {
           "from": {
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "description": "left control + 1 - launches a new Google Chrome window",
+      "description": "left control + 1 - launches a new Google Chrome tab",
       "manipulators": [
         {
           "from": {
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "description": "left control + 2 - launches a new Safari window",
+      "description": "left control + 2 - launches a new Safari tab",
       "manipulators": [
         {
           "from": {
